@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>초간단 배달 사장님 사이트 - 온보딩</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/plugins/fontawesome-free/css/all.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/css/adminlte.min.css">
+  <!-- Current Page style -->
+  <link rel="stylesheet" href="/css/signup/signup.css">
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+  <!-- /.login-logo -->
+  <div class="card card-outline card-primary">
+    <div class="card-header text-center">
+      <h1><b>매장</b> 기본정보</h1>
+    </div>
+    <div class="card-body">
+      <p class="login-box-msg">배달서비스 매장 정보를 입력하세요.</p>
+
+      <form action="/onboarding/step/store" method="post">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" name="storeName" placeholder="상호">
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" name="storePhone" placeholder="매장 전화번호">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-phone"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" name="managerName" placeholder="매장 담당자 이름">
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" name="managerPhone" placeholder="매장 담당자 전화번호">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-phone"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" name="storeAddress" placeholder="매장 주소">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-address-card"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" name="businessNumber" placeholder="사업자 번호">
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" name="deliveryTime" placeholder="평균 배달 시간">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-clock"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" name="storeMainImageUrl" placeholder="매장 대표 이미지 URL">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-image"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" name="description" placeholder="매장 상세 설명">
+        </div>
+        <div class="input-group mb-3">
+          <input type="number" class="form-control" name="deliveryFee" placeholder="배달비">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-won-sign"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="number" class="form-control" name="minimumOrderPrice" placeholder="최소 주문 금액">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-won-sign"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- /.col -->
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="submit" class="btn btn-primary btn-block">다음</button>
+          </div>
+        </div>
+      </form>
+
+      <div class="social-auth-links text-center mt-2 mb-3">
+        &nbsp;
+      </div>
+    </div>
+    <!-- /.card-body -->
+  </div>
+  <!-- /.card -->
+</div>
+<!-- /.login-box -->
+
+<!-- jQuery -->
+<script src="/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="/js/adminlte.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+.step1-form-area {
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.table-div {
+    align-items: center;
+    width: 80%;
+}
+
+.step-form-table {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    width: 100%;
+}
+
+.step-form-table tr {
+    padding: 10px;
+    height: 50px;
+}
+
+.td-label {
+    width: 8rem;
+    text-align: left;
+}
+
+.td-input {
+    width: 100%;
+    text-align: left;
+}

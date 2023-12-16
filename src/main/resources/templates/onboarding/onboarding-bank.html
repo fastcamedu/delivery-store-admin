@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>초간단 배달 사장님 사이트 - 온보딩</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/plugins/fontawesome-free/css/all.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/css/adminlte.min.css">
+  <!-- Current Page style -->
+  <link rel="stylesheet" href="/css/signup/signup.css">
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+
+  <div class="card card-outline card-primary">
+    <div class="card-header text-center">
+      <h1><b>매장</b> 정산정보</h1>
+    </div>
+    <div class="card-body">
+      <p class="login-box-msg">배달서비스 매장의 정산 정보를 입력하세요.</p>
+
+      <form action="/onboarding/step/bank" method="post">
+
+        <div class="input-group mb-3">
+          <select class="form-control" name="bankCode" id="bank">
+            <option value="SHINHAN">신한은행</option>
+            <option value="KB">국민은행</option>
+          </select>
+        </div>
+
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" name="bankAccount" placeholder="계좌번호">
+        </div>
+
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" name="bankAccountName" placeholder="예금주">
+        </div>
+
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="사업자등록증 상호명">
+        </div>
+
+        <div class="row">
+          <!-- /.col -->
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="submit" class="btn btn-primary btn-block">다음</button>
+          </div>
+        </div>
+      </form>
+
+      <div class="social-auth-links text-center mt-2 mb-3">
+        &nbsp;
+      </div>
+    </div>
+    <!-- /.card-body -->
+  </div>
+  <!-- /.card -->
+</div>
+<!-- /.login-box -->
+
+<!-- jQuery -->
+<script src="/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="/js/adminlte.min.js"></script>
+</body>
+</html>

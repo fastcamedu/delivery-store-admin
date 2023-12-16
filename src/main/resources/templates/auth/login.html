@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>초간단 배달 사장님 사이트 - 로그인</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/plugins/fontawesome-free/css/all.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/css/adminlte.min.css">
+  <!-- Current Page style -->
+  <link rel="stylesheet" href="/css/login/login.css">
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+
+  <div class="card card-outline card-primary">
+    <div class="card-header text-center">
+      <h1><b>사장님 사이트</b> 로그인</h1>
+    </div>
+    <div class="card-body">
+      <p class="login-box-msg">로그인하시고 매출을 올려보세요.</p>
+
+      <form action="/auth/login-process" method="post">
+
+        <div class="input-group mb-3">
+          <input type="email" class="form-control" name="email" placeholder="이메일">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-group mb-3">
+          <input type="password" class="form-control" name="password" placeholder="비밀번호">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- /.col -->
+          <div class="col-12" style="text-align: center">
+            <button type="submit" class="btn btn-primary">로그인</button>
+            <button type="button" class="btn btn-warning login-cancel-btn">취소</button>
+          </div>
+        </div>
+      </form>
+
+      <div class="social-auth-links text-center mt-2 mb-3">
+        &nbsp;
+      </div>
+    </div>
+    <!-- /.card-body -->
+  </div>
+  <!-- /.card -->
+</div>
+<!-- /.login-box -->
+
+<!-- jQuery -->
+<script src="/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="/js/adminlte.min.js"></script>
+<!-- Login JS -->
+<script src="/js/login/login.js"></script>
+</body>
+</html>

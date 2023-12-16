@@ -1,0 +1,32 @@
+html {
+    margin: 0;
+    height: 100%;
+}
+
+.bg {
+    /* The image used */
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("http://localhost:20002/images/home-bg.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.hero-h1-area {
+    color: white;
+    font-weight: bold;
+    height: 50%;
+}
+
+.bottom-btn-area {
+    height: 50%;
+}

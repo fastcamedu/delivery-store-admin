@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>초간단 배달 사장님 사이트 - 온보딩</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/plugins/fontawesome-free/css/all.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/css/adminlte.min.css">
+  <!-- Current Page style -->
+  <link rel="stylesheet" href="/css/signup/signup.css">
+</head>
+
+<body class="hold-transition login-page">
+<div class="login-box">
+  <!-- /.login-logo -->
+  <div class="card card-outline card-primary">
+    <div class="card-header text-center">
+      <h1><b>사장님 사이트</b> 가입 정보 확인</h1>
+    </div>
+    <div class="card-body">
+      <form action="/onboarding/step/signup" method="post">
+        <form>
+          <fieldset>
+            <legend>사장님 정보</legend>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" th:value="${storeOwnerForm.email}" disabled>
+            </div>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" th:value="${storeOwnerForm.name}" disabled>
+            </div>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" th:value="${storeOwnerForm.phone}" disabled>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>매장 정보</legend>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" th:value="${storeForm.storeName}" disabled>
+            </div>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" th:value="${storeForm.storePhone}" disabled>
+            </div>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" th:value="${storeForm.storeAddress}" disabled>
+            </div>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" th:value="${storeForm.deliveryFee}" disabled>
+            </div>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" th:value="${storeForm.minimumOrderPrice}" disabled>
+            </div>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" th:value="${storeForm.deliveryTime}" disabled>
+            </div>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" th:value="${storeForm.storeMainImageUrl}" disabled>
+            </div>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" th:value="${storeForm.businessNumber}" disabled>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>은행 정보</legend>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" th:value="${bankForm.bankCode}" disabled>
+            </div>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" th:value="${bankForm.bankAccount}" disabled>
+            </div>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" th:value="${bankForm.bankAccountName}" disabled>
+            </div>
+          </fieldset>
+          <div class="row">
+            <!-- /.col -->
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <button type="submit" class="btn btn-primary btn-block">가입</button>
+            </div>
+          </div>
+      </form>
+
+      <div class="social-auth-links text-center mt-2 mb-3">
+        &nbsp;
+      </div>
+    </div>
+    <!-- /.card-body -->
+  </div>
+  <!-- /.card -->
+</div>
+<!-- /.login-box -->
+
+<!-- jQuery -->
+<script src="/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="/js/adminlte.min.js"></script>
+</body>
+</html>
